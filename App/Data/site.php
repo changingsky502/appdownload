@@ -1,0 +1,1 @@
+<?php exit;?>a:1:{i:0;a:12:{s:2:"id";s:5:"basic";s:12:"apiAccessKey";s:0:"";s:10:"fileDriver";s:5:"local";s:11:"accessKeyId";s:0:"";s:15:"accessKeySecret";s:0:"";s:6:"bucket";s:0:"";s:8:"endpoint";s:0:"";s:16:"endpointInternal";s:0:"";s:8:"secretId";s:0:"";s:9:"secretKey";s:0:"";s:6:"region";s:0:"";s:9:"cosBucket";s:0:"";}}

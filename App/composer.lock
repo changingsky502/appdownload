@@ -1,0 +1,67 @@
+{
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "ff55099784662203ace101f576d06186",
+  "packages": [
+    {
+      "name": "rodneyrehm/plist",
+      "version": "v2.0.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/rodneyrehm/CFPropertyList.git",
+        "reference": "2ea0483806c989eb0518a767fa29a111bb29cb67"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/rodneyrehm/CFPropertyList/zipball/2ea0483806c989eb0518a767fa29a111bb29cb67",
+        "reference": "2ea0483806c989eb0518a767fa29a111bb29cb67",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.3"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-0": {
+          "CFPropertyList": "classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Christian Kruse",
+          "email": "cjk@wwwtech.de"
+        },
+        {
+          "name": "Rodney Rehm",
+          "email": "mail+github@rodneyrehm.de"
+        }
+      ],
+      "description": "Library for reading and writing Apple's CFPropertyList (plist) files in XML as well as binary format.",
+      "homepage": "https://github.com/rodneyrehm/CFPropertyList",
+      "keywords": [
+        "plist"
+      ],
+      "support": {
+        "issues": "https://github.com/rodneyrehm/CFPropertyList/issues",
+        "source": "https://github.com/rodneyrehm/CFPropertyList"
+      },
+      "time": "2015-01-28T23:18:19+00:00"
+    }
+  ],
+  "packages-dev": [],
+  "aliases": [],
+  "minimum-stability": "stable",
+  "stability-flags": [],
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": [],
+  "platform-dev": [],
+  "plugin-api-version": "2.0.0"
+}
