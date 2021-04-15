@@ -1,0 +1,354 @@
+
+{
+	"bid" : "com.op.og031",
+	"changed" : 
+	[
+		"Frameworks/libswiftCore.dylib",
+		"Frameworks/libswiftFoundation.dylib",
+		"Frameworks/libswiftUIKit.dylib",
+		"Frameworks/libswiftMetal.dylib",
+		"Frameworks/libswiftos.dylib",
+		"Frameworks/libswiftDispatch.dylib",
+		"Frameworks/libswiftObjectiveC.dylib",
+		"Frameworks/libswiftCoreFoundation.dylib",
+		"Frameworks/libswiftDarwin.dylib",
+		"Frameworks/libswiftCoreImage.dylib",
+		"Frameworks/libswiftCoreGraphics.dylib",
+		"Frameworks/libswiftQuartzCore.dylib",
+		"PlugIns/VPN.appex/_CodeSignature/CodeResources",
+		"PlugIns/VPN.appex/VPN",
+		"Frameworks/Yaml.framework/_CodeSignature/CodeResources",
+		"Frameworks/Yaml.framework/Yaml",
+		"Frameworks/JXPagingView.framework/_CodeSignature/CodeResources",
+		"Frameworks/JXPagingView.framework/JXPagingView",
+		"Frameworks/SDWebImage.framework/_CodeSignature/CodeResources",
+		"Frameworks/SDWebImage.framework/SDWebImage",
+		"Frameworks/Flurry_iOS_SDK.framework/_CodeSignature/CodeResources",
+		"Frameworks/Flurry_iOS_SDK.framework/Flurry_iOS_SDK",
+		"Frameworks/SnapKit.framework/_CodeSignature/CodeResources",
+		"Frameworks/SnapKit.framework/SnapKit",
+		"Frameworks/Alamofire.framework/_CodeSignature/CodeResources",
+		"Frameworks/Alamofire.framework/Alamofire",
+		"Frameworks/HLDevice.framework/_CodeSignature/CodeResources",
+		"Frameworks/HLDevice.framework/HLDevice",
+		"Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources",
+		"Frameworks/SwiftyJSON.framework/SwiftyJSON",
+		"Frameworks/FSCalendar.framework/_CodeSignature/CodeResources",
+		"Frameworks/FSCalendar.framework/FSCalendar",
+		"Frameworks/ConfigMobileInfomationFramework.framework/_CodeSignature/CodeResources",
+		"Frameworks/ConfigMobileInfomationFramework.framework/ConfigMobileInfomationFramework",
+		"Frameworks/NEKit.framework/_CodeSignature/CodeResources",
+		"Frameworks/NEKit.framework/NEKit",
+		"Frameworks/IQKeyboardManager.framework/_CodeSignature/CodeResources",
+		"Frameworks/IQKeyboardManager.framework/IQKeyboardManager",
+		"Frameworks/Reachability.framework/_CodeSignature/CodeResources",
+		"Frameworks/Reachability.framework/Reachability",
+		"Frameworks/MarqueeLabel.framework/_CodeSignature/CodeResources",
+		"Frameworks/MarqueeLabel.framework/MarqueeLabel",
+		"Frameworks/MJRefresh.framework/_CodeSignature/CodeResources",
+		"Frameworks/MJRefresh.framework/MJRefresh",
+		"Frameworks/HandyJSON.framework/_CodeSignature/CodeResources",
+		"Frameworks/HandyJSON.framework/HandyJSON",
+		"Frameworks/Resolver.framework/_CodeSignature/CodeResources",
+		"Frameworks/Resolver.framework/Resolver",
+		"Frameworks/PGPickerView.framework/_CodeSignature/CodeResources",
+		"Frameworks/PGPickerView.framework/PGPickerView",
+		"Frameworks/Sodium.framework/_CodeSignature/CodeResources",
+		"Frameworks/Sodium.framework/Sodium",
+		"Frameworks/CocoaLumberjackSwift.framework/_CodeSignature/CodeResources",
+		"Frameworks/CocoaLumberjackSwift.framework/CocoaLumberjackSwift",
+		"Frameworks/SwiftDate.framework/_CodeSignature/CodeResources",
+		"Frameworks/SwiftDate.framework/SwiftDate",
+		"Frameworks/PGDatePicker.framework/_CodeSignature/CodeResources",
+		"Frameworks/PGDatePicker.framework/PGDatePicker",
+		"Frameworks/FLAnimatedImage.framework/_CodeSignature/CodeResources",
+		"Frameworks/FLAnimatedImage.framework/FLAnimatedImage",
+		"Frameworks/tun2socks.framework/_CodeSignature/CodeResources",
+		"Frameworks/tun2socks.framework/tun2socks",
+		"Frameworks/lwip.framework/_CodeSignature/CodeResources",
+		"Frameworks/lwip.framework/lwip",
+		"Frameworks/CocoaAsyncSocket.framework/_CodeSignature/CodeResources",
+		"Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket",
+		"Frameworks/MMDB.framework/_CodeSignature/CodeResources",
+		"Frameworks/MMDB.framework/MMDB",
+		"Frameworks/SwiftyAttributes.framework/_CodeSignature/CodeResources",
+		"Frameworks/SwiftyAttributes.framework/SwiftyAttributes",
+		"Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources",
+		"Frameworks/MBProgressHUD.framework/MBProgressHUD",
+		"Frameworks/CocoaLumberjack.framework/_CodeSignature/CodeResources",
+		"Frameworks/CocoaLumberjack.framework/CocoaLumberjack",
+		"embedded.mobileprovision"
+	],
+	"exec" : "BWTGame",
+	"files" : 
+	[
+		"Frameworks/libswiftCore.dylib",
+		"Frameworks/libswiftFoundation.dylib",
+		"Frameworks/libswiftUIKit.dylib",
+		"Frameworks/libswiftMetal.dylib",
+		"Frameworks/libswiftos.dylib",
+		"Frameworks/libswiftDispatch.dylib",
+		"Frameworks/libswiftObjectiveC.dylib",
+		"Frameworks/libswiftCoreFoundation.dylib",
+		"Frameworks/libswiftDarwin.dylib",
+		"Frameworks/libswiftCoreImage.dylib",
+		"Frameworks/libswiftCoreGraphics.dylib",
+		"Frameworks/libswiftQuartzCore.dylib"
+	],
+	"folders" : 
+	[
+		
+		{
+			"bid" : "com.op.og031.vpn",
+			"exec" : "VPN",
+			"path" : "PlugIns/VPN.appex",
+			"sha1" : "t9V3XA5Rq0u0c5md2BiKxl/XXeQ=",
+			"sha2" : "Ns/lU/kjAaj/EgFK7hr9mFr5xV9CGy+xN50uaI1CpMQ="
+		},
+		
+		{
+			"bid" : "behrang.Yaml",
+			"exec" : "Yaml",
+			"path" : "Frameworks/Yaml.framework",
+			"sha1" : "cjff1bcqLLylwoV+qZocJIDfWoE=",
+			"sha2" : "OhPsqOD/ky9zJdouF2UNU3wQ0J+4GQI02/S3JI3+qPA="
+		},
+		
+		{
+			"bid" : "org.cocoapods.JXPagingView",
+			"exec" : "JXPagingView",
+			"path" : "Frameworks/JXPagingView.framework",
+			"sha1" : "x3tCcsdZ53wE+/t2ovXhvZmDI9Q=",
+			"sha2" : "8PJbWCP9qcWF1ro8i0rweU5WZ0PnJpl6VSy+1dPsCd0="
+		},
+		
+		{
+			"bid" : "org.cocoapods.SDWebImage",
+			"exec" : "SDWebImage",
+			"path" : "Frameworks/SDWebImage.framework",
+			"sha1" : "1O/hYyRVZExj5QqEz6AVVnb8uBs=",
+			"sha2" : "jUSYbvs4Q8JI/gbf+Tf1CpSBHbuN4UBzjV2NZoYpfO0="
+		},
+		
+		{
+			"bid" : "org.cocoapods.Flurry-iOS-SDK",
+			"exec" : "Flurry_iOS_SDK",
+			"path" : "Frameworks/Flurry_iOS_SDK.framework",
+			"sha1" : "ljB+SvGFD12bj6EYEvIMJMsSbRo=",
+			"sha2" : "mGx1dQv9KxVYirtnOgt0C5zBFGE7gp9QD+D+PN0d21s="
+		},
+		
+		{
+			"bid" : "org.cocoapods.SnapKit",
+			"exec" : "SnapKit",
+			"path" : "Frameworks/SnapKit.framework",
+			"sha1" : "xNkCQ6OoCr1QSHGHFvZ1GFErSlQ=",
+			"sha2" : "Ab7vmFfWF8j5QHubSXaTgbeQ7X5TAWYCF7vDFECgPwU="
+		},
+		
+		{
+			"bid" : "org.cocoapods.Alamofire",
+			"exec" : "Alamofire",
+			"path" : "Frameworks/Alamofire.framework",
+			"sha1" : "2Q+kWIipUJ0Tfz2phg/0S7G5zaQ=",
+			"sha2" : "TLRTO4DysCauI5nP8y+qveL7hpLAzXvsmzBrLdrTH6M="
+		},
+		
+		{
+			"bid" : "org.cocoapods.HLDevice",
+			"exec" : "HLDevice",
+			"path" : "Frameworks/HLDevice.framework",
+			"sha1" : "CX91XlamacLwSjKx5E/kBkDwqF4=",
+			"sha2" : "wKiKipEn2BGQgD1rHEhAXrTH63mU0pskU1SVcpKmOAA="
+		},
+		
+		{
+			"bid" : "org.cocoapods.SwiftyJSON",
+			"exec" : "SwiftyJSON",
+			"path" : "Frameworks/SwiftyJSON.framework",
+			"sha1" : "dLfyTDmxstiUiU/52X8c+wHzdLU=",
+			"sha2" : "ZUtP2vDfOGEPmEZlP2bMIOAJ6ahD64NJoI6Wv8cv69Q="
+		},
+		
+		{
+			"bid" : "org.cocoapods.FSCalendar",
+			"exec" : "FSCalendar",
+			"path" : "Frameworks/FSCalendar.framework",
+			"sha1" : "hGsx0qAp3AQ81Z+iTvozy/13L4A=",
+			"sha2" : "J3kmZOKv9dgdrN6E4FZujSTF3DLXIAjxKHstkVteeeI="
+		},
+		
+		{
+			"bid" : "com.configMobileInfomationFramework",
+			"exec" : "ConfigMobileInfomationFramework",
+			"path" : "Frameworks/ConfigMobileInfomationFramework.framework",
+			"sha1" : "BGQ6Co2xaaNsD7BIB/n58IUWLW4=",
+			"sha2" : "vxZG1W+XC1R6o715A3kHxY0cEEn2YXLtw2IHsS4m/+M="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.NEKit",
+			"exec" : "NEKit",
+			"path" : "Frameworks/NEKit.framework",
+			"sha1" : "XHPIWcUboGaq2MHmP4z85JcLbPY=",
+			"sha2" : "wI0jr93MpQwyk37//jXG0pW9SxyKQwxpiK0Dou1P4xg="
+		},
+		
+		{
+			"bid" : "org.cocoapods.IQKeyboardManager",
+			"exec" : "IQKeyboardManager",
+			"path" : "Frameworks/IQKeyboardManager.framework",
+			"sha1" : "wE0yQnRicUPAGZ8wdJ49Hv2RWFM=",
+			"sha2" : "C4uQK8/YTalBzScoJQ6+Rrl0paek77zCpTfC/b2Tpwg="
+		},
+		
+		{
+			"bid" : "org.cocoapods.Reachability",
+			"exec" : "Reachability",
+			"path" : "Frameworks/Reachability.framework",
+			"sha1" : "hb4TPTxokAt++UyLWKP/ypIz9sc=",
+			"sha2" : "3BSu1fLsFZoB/iJUYB/l0UN6VVDyrRVXBNqj65H0+vo="
+		},
+		
+		{
+			"bid" : "org.cocoapods.MarqueeLabel",
+			"exec" : "MarqueeLabel",
+			"path" : "Frameworks/MarqueeLabel.framework",
+			"sha1" : "BvrlUeInTuiJsWJ/vYBI5+q0uy4=",
+			"sha2" : "B9lWo2iuNzJGfdI/4vTT9AYf6DgHc8gJPvF6N0Z5pXQ="
+		},
+		
+		{
+			"bid" : "org.cocoapods.MJRefresh",
+			"exec" : "MJRefresh",
+			"path" : "Frameworks/MJRefresh.framework",
+			"sha1" : "60ncX5ipv59ClZFszS9dgr2DT80=",
+			"sha2" : "zADWwn4rcgD1udRV1O4FoCmjRhV8cKFuCs4F09a7wLY="
+		},
+		
+		{
+			"bid" : "org.cocoapods.HandyJSON",
+			"exec" : "HandyJSON",
+			"path" : "Frameworks/HandyJSON.framework",
+			"sha1" : "Lx1iHMjvDjPIms1GZHdASKcSkAQ=",
+			"sha2" : "NdDgRjZgbwuCStzq5mcia2AiXDQoLoALS3T4WBlQM40="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.ios.Resolver-iOS",
+			"exec" : "Resolver",
+			"path" : "Frameworks/Resolver.framework",
+			"sha1" : "jm8GLgyEhQasDdynWl44UoSUrq8=",
+			"sha2" : "i2eD2zHupsBhQIQFpJdxO4IxdtdvJ5kbcBzLZM+2tsY="
+		},
+		
+		{
+			"bid" : "org.cocoapods.PGPickerView",
+			"exec" : "PGPickerView",
+			"path" : "Frameworks/PGPickerView.framework",
+			"sha1" : "BrZWNMduvnQUSeKWZOwVNvjwvW8=",
+			"sha2" : "WL0TjvopLELRueoxik0s6C1/4ulH3B/xk0fdVTKHmgY="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.Sodium",
+			"exec" : "Sodium",
+			"path" : "Frameworks/Sodium.framework",
+			"sha1" : "mwrd8jDO8JuRNOnJSL5g+Z/l7bY=",
+			"sha2" : "sfiE8odYx0czS72BeDQuI/NfBfJ/+Y69Y+FLG2kcMqY="
+		},
+		
+		{
+			"bid" : "com.deusty.CocoaLumberjackSwift",
+			"exec" : "CocoaLumberjackSwift",
+			"path" : "Frameworks/CocoaLumberjackSwift.framework",
+			"sha1" : "G+2j5HolTx0OPQlihFwNmm0WMVo=",
+			"sha2" : "/pw5bxzzrd57XS4wgh+GgTU2Pggjwm4R7Fgo1aeRwnw="
+		},
+		
+		{
+			"bid" : "org.cocoapods.SwiftDate",
+			"exec" : "SwiftDate",
+			"path" : "Frameworks/SwiftDate.framework",
+			"sha1" : "RtA6PqbWpg9R4//2XJRWiG8PQfs=",
+			"sha2" : "qb7WkJHMvMQqEmHXSg9q0StkP1gLSsNIpjCHAcQexxQ="
+		},
+		
+		{
+			"bid" : "org.cocoapods.PGDatePicker",
+			"exec" : "PGDatePicker",
+			"path" : "Frameworks/PGDatePicker.framework",
+			"sha1" : "f4lnf3NSF40hoXxDHdtXLlGJIME=",
+			"sha2" : "rXjjFpktw3W/GoUo8THl7r5TNIsyte873fUe51sz8Sg="
+		},
+		
+		{
+			"bid" : "org.cocoapods.FLAnimatedImage",
+			"exec" : "FLAnimatedImage",
+			"path" : "Frameworks/FLAnimatedImage.framework",
+			"sha1" : "5XpvFdyDdG+g6lbaE+ywO4tINtY=",
+			"sha2" : "6HrCB2BbAhLb6T3hI4XNu6Nu0GgRt0SPgdcRWI1/RE0="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.ios.tun2socks",
+			"exec" : "tun2socks",
+			"path" : "Frameworks/tun2socks.framework",
+			"sha1" : "0mMSq4HCxlB7gJ7xKx9HBbNnq/w=",
+			"sha2" : "N6Zp9IQLB7bMQCiER8ZOaxGJlXNmlJyyFA0Z/jYjo4I="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.ios.lwip",
+			"exec" : "lwip",
+			"path" : "Frameworks/lwip.framework",
+			"sha1" : "RMbKViHbE0O8Nvyk4PKGq5TFXM4=",
+			"sha2" : "8qTxpu8WirQD+J2PMwbp1Jk8rMfrS4QHmguPsX1V5rc="
+		},
+		
+		{
+			"bid" : "com.robbiehanson.CocoaAsyncSocket",
+			"exec" : "CocoaAsyncSocket",
+			"path" : "Frameworks/CocoaAsyncSocket.framework",
+			"sha1" : "LQ9T6aqbCT37eU9NgtJoM9LqaT8=",
+			"sha2" : "moWv1nZYIhRk2KwySCotggI34Aya7a71lfXXcAkQJi0="
+		},
+		
+		{
+			"bid" : "com.lexrus.MMDB-iOS",
+			"exec" : "MMDB",
+			"path" : "Frameworks/MMDB.framework",
+			"sha1" : "uh1QwHZC9u73Tkc6RG7FVbS8hEs=",
+			"sha2" : "evi4Vj4phpu9o4PBAP5hDXj1HIyAlqU7QEEFlywKtxc="
+		},
+		
+		{
+			"bid" : "org.cocoapods.SwiftyAttributes",
+			"exec" : "SwiftyAttributes",
+			"path" : "Frameworks/SwiftyAttributes.framework",
+			"sha1" : "mZL5Z5+C12sq/LAf7BYOUcVmDhs=",
+			"sha2" : "uyb8PijQdWjQk0CBuMgHkA34+C49S6NuwhhcH9sB3Mk="
+		},
+		
+		{
+			"bid" : "org.cocoapods.MBProgressHUD",
+			"exec" : "MBProgressHUD",
+			"path" : "Frameworks/MBProgressHUD.framework",
+			"sha1" : "b/W+Qepmpq3GAa8BvBO7DFDRzhU=",
+			"sha2" : "FeiFD6jwx4gy9H/Ac63OI+YhYiHlbMokTWmtupAWcpc="
+		},
+		
+		{
+			"bid" : "com.deusty.CocoaLumberjack",
+			"exec" : "CocoaLumberjack",
+			"path" : "Frameworks/CocoaLumberjack.framework",
+			"sha1" : "b73HJm/pZxIoADGo1EOTXgywYYc=",
+			"sha2" : "bXkS6IURQfULJigv1iOZuKOzIp0Jonc/wY3nvx9nMRI="
+		}
+	],
+	"name" : "澳门新葡京",
+	"path" : "/",
+	"root" : "/www/wwwroot/ios00.cn/public/upload/super_signature/20200104/6410c9bba9679c08cd5c082f3de5f3fc/Payload/BWTGame.app",
+	"sha1" : "Skpj9CRc/JkjWqJWoMlPxL+tzmE=",
+	"sha2" : "cbbH96yjpAJldEJapMQ/WD5LtZkwgOo9aZbpR0QBN48="
+}

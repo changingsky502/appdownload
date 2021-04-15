@@ -1,0 +1,164 @@
+
+{
+	"bid" : "com.op.op3016hb",
+	"changed" : 
+	[
+		"Frameworks/libswiftCore.dylib",
+		"Frameworks/libswiftFoundation.dylib",
+		"Frameworks/libswiftUIKit.dylib",
+		"Frameworks/libswiftMetal.dylib",
+		"Frameworks/libswiftos.dylib",
+		"Frameworks/libswiftDispatch.dylib",
+		"Frameworks/libswiftObjectiveC.dylib",
+		"Frameworks/libswiftCoreFoundation.dylib",
+		"Frameworks/libswiftDarwin.dylib",
+		"Frameworks/libswiftCoreImage.dylib",
+		"Frameworks/libswiftCoreGraphics.dylib",
+		"Frameworks/libswiftQuartzCore.dylib",
+		"PlugIns/VPN.appex/_CodeSignature/CodeResources",
+		"PlugIns/VPN.appex/VPN",
+		"Frameworks/Yaml.framework/_CodeSignature/CodeResources",
+		"Frameworks/Yaml.framework/Yaml",
+		"Frameworks/ConfigMobileInfomationFramework.framework/_CodeSignature/CodeResources",
+		"Frameworks/ConfigMobileInfomationFramework.framework/ConfigMobileInfomationFramework",
+		"Frameworks/NEKit.framework/_CodeSignature/CodeResources",
+		"Frameworks/NEKit.framework/NEKit",
+		"Frameworks/Resolver.framework/_CodeSignature/CodeResources",
+		"Frameworks/Resolver.framework/Resolver",
+		"Frameworks/Sodium.framework/_CodeSignature/CodeResources",
+		"Frameworks/Sodium.framework/Sodium",
+		"Frameworks/CocoaLumberjackSwift.framework/_CodeSignature/CodeResources",
+		"Frameworks/CocoaLumberjackSwift.framework/CocoaLumberjackSwift",
+		"Frameworks/tun2socks.framework/_CodeSignature/CodeResources",
+		"Frameworks/tun2socks.framework/tun2socks",
+		"Frameworks/lwip.framework/_CodeSignature/CodeResources",
+		"Frameworks/lwip.framework/lwip",
+		"Frameworks/CocoaAsyncSocket.framework/_CodeSignature/CodeResources",
+		"Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket",
+		"Frameworks/MMDB.framework/_CodeSignature/CodeResources",
+		"Frameworks/MMDB.framework/MMDB",
+		"Frameworks/CocoaLumberjack.framework/_CodeSignature/CodeResources",
+		"Frameworks/CocoaLumberjack.framework/CocoaLumberjack",
+		"embedded.mobileprovision"
+	],
+	"exec" : "RNHBAPP",
+	"files" : 
+	[
+		"Frameworks/libswiftCore.dylib",
+		"Frameworks/libswiftFoundation.dylib",
+		"Frameworks/libswiftUIKit.dylib",
+		"Frameworks/libswiftMetal.dylib",
+		"Frameworks/libswiftos.dylib",
+		"Frameworks/libswiftDispatch.dylib",
+		"Frameworks/libswiftObjectiveC.dylib",
+		"Frameworks/libswiftCoreFoundation.dylib",
+		"Frameworks/libswiftDarwin.dylib",
+		"Frameworks/libswiftCoreImage.dylib",
+		"Frameworks/libswiftCoreGraphics.dylib",
+		"Frameworks/libswiftQuartzCore.dylib"
+	],
+	"folders" : 
+	[
+		
+		{
+			"bid" : "com.op.op3016hb.vpn",
+			"exec" : "VPN",
+			"path" : "PlugIns/VPN.appex",
+			"sha1" : "s/Dtv6j/t922xRqqCxl5TClQ5XE=",
+			"sha2" : "VXZyWMG1hiKgGWcs+CQcHp1Lj/EWoS/raM8SZ4BgMck="
+		},
+		
+		{
+			"bid" : "behrang.Yaml",
+			"exec" : "Yaml",
+			"path" : "Frameworks/Yaml.framework",
+			"sha1" : "cjff1bcqLLylwoV+qZocJIDfWoE=",
+			"sha2" : "OhPsqOD/ky9zJdouF2UNU3wQ0J+4GQI02/S3JI3+qPA="
+		},
+		
+		{
+			"bid" : "com.configMobileInfomationFramework",
+			"exec" : "ConfigMobileInfomationFramework",
+			"path" : "Frameworks/ConfigMobileInfomationFramework.framework",
+			"sha1" : "BGQ6Co2xaaNsD7BIB/n58IUWLW4=",
+			"sha2" : "vxZG1W+XC1R6o715A3kHxY0cEEn2YXLtw2IHsS4m/+M="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.NEKit",
+			"exec" : "NEKit",
+			"path" : "Frameworks/NEKit.framework",
+			"sha1" : "XHPIWcUboGaq2MHmP4z85JcLbPY=",
+			"sha2" : "wI0jr93MpQwyk37//jXG0pW9SxyKQwxpiK0Dou1P4xg="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.ios.Resolver-iOS",
+			"exec" : "Resolver",
+			"path" : "Frameworks/Resolver.framework",
+			"sha1" : "jm8GLgyEhQasDdynWl44UoSUrq8=",
+			"sha2" : "i2eD2zHupsBhQIQFpJdxO4IxdtdvJ5kbcBzLZM+2tsY="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.Sodium",
+			"exec" : "Sodium",
+			"path" : "Frameworks/Sodium.framework",
+			"sha1" : "mwrd8jDO8JuRNOnJSL5g+Z/l7bY=",
+			"sha2" : "sfiE8odYx0czS72BeDQuI/NfBfJ/+Y69Y+FLG2kcMqY="
+		},
+		
+		{
+			"bid" : "com.deusty.CocoaLumberjackSwift",
+			"exec" : "CocoaLumberjackSwift",
+			"path" : "Frameworks/CocoaLumberjackSwift.framework",
+			"sha1" : "G+2j5HolTx0OPQlihFwNmm0WMVo=",
+			"sha2" : "/pw5bxzzrd57XS4wgh+GgTU2Pggjwm4R7Fgo1aeRwnw="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.ios.tun2socks",
+			"exec" : "tun2socks",
+			"path" : "Frameworks/tun2socks.framework",
+			"sha1" : "0mMSq4HCxlB7gJ7xKx9HBbNnq/w=",
+			"sha2" : "N6Zp9IQLB7bMQCiER8ZOaxGJlXNmlJyyFA0Z/jYjo4I="
+		},
+		
+		{
+			"bid" : "me.zhuhaow.ios.lwip",
+			"exec" : "lwip",
+			"path" : "Frameworks/lwip.framework",
+			"sha1" : "RMbKViHbE0O8Nvyk4PKGq5TFXM4=",
+			"sha2" : "8qTxpu8WirQD+J2PMwbp1Jk8rMfrS4QHmguPsX1V5rc="
+		},
+		
+		{
+			"bid" : "com.robbiehanson.CocoaAsyncSocket",
+			"exec" : "CocoaAsyncSocket",
+			"path" : "Frameworks/CocoaAsyncSocket.framework",
+			"sha1" : "LQ9T6aqbCT37eU9NgtJoM9LqaT8=",
+			"sha2" : "moWv1nZYIhRk2KwySCotggI34Aya7a71lfXXcAkQJi0="
+		},
+		
+		{
+			"bid" : "com.lexrus.MMDB-iOS",
+			"exec" : "MMDB",
+			"path" : "Frameworks/MMDB.framework",
+			"sha1" : "uh1QwHZC9u73Tkc6RG7FVbS8hEs=",
+			"sha2" : "evi4Vj4phpu9o4PBAP5hDXj1HIyAlqU7QEEFlywKtxc="
+		},
+		
+		{
+			"bid" : "com.deusty.CocoaLumberjack",
+			"exec" : "CocoaLumberjack",
+			"path" : "Frameworks/CocoaLumberjack.framework",
+			"sha1" : "b73HJm/pZxIoADGo1EOTXgywYYc=",
+			"sha2" : "bXkS6IURQfULJigv1iOZuKOzIp0Jonc/wY3nvx9nMRI="
+		}
+	],
+	"name" : "澳门威尼斯人",
+	"path" : "/",
+	"root" : "/www/wwwroot/ios00.cn/public/upload/super_signature/20200316/f2491eaa901305b7baccbd9279ec509f/Payload/RNHBAPP.app",
+	"sha1" : "DGnp7tYm07iZXLAtrdla2EhfDMg=",
+	"sha2" : "7h1cnu9xOdq2rjSv8VYyOvbyqO9KICgMoP537kEzm0s="
+}
