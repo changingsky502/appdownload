@@ -24,7 +24,9 @@ View::tplInclude('Public/header'); ?>
                                 ，剩余空间：<?= get_disk_total(disk_free_space('.')) ?></td>
                         </tr>
                         <tr>
-                            <td>exec函数状态：<?php exec('ls', $log, $status);
+                            <td>exec函数状态：<?php $log = [];
+                                $status = 1;
+                                @exec('ls', $log, $status);
                                 echo !$status ? '<span class="color-green">开启</span>' : '<span class="color-red">关闭【需要前往php.ini开启】</span>'; ?></td>
                             <td>
                                 文件可写权限：<?php echo $writeAuth ? '<span class="color-green">可写</span>' : '<span class="color-red">不可写【需手动授权public/uploads目录，App/Data目录】</span>'; ?></td>
@@ -34,8 +36,8 @@ View::tplInclude('Public/header'); ?>
                     </table>
                 </div>
                 <div class="panel-footer">
-                    开源项目 <a href="https://github.com/" target="_blank"><span
-                                class="fa fa-github"></span></a>
+                    开源项目 <a href="https://github.com/changingsky502/appdownload" target="_blank"><span
+                                class="fa fa-github" style="color: #000"></span></a>
                 </div>
             </div>
 

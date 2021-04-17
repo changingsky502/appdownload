@@ -84,8 +84,11 @@ uploader.bind('Error',function(up, err){
     else if (err.code == -602) {
         toastr.error("这个文件已经上传过一遍了!");
     }
+    else if (err.code == -200 && err.status == 413) {
+        toastr.error("上传文件大小已经超出服务器上传大小限制，请调整服务器配置！");
+    }
     else {
-        document.getElementById('console').appendChild(document.createTextNode("\nError xml:" + err.response));
+        toastr.error(err.status + err.message);
     }
 });
 

@@ -236,11 +236,11 @@ function myf_put_contents($file, $data)
 function myf_get_contents($file)
 {
     $data = file_get_contents($file);
-    return substr($data, 13);
+    return substr($data, 14);
 }
 
 function php_header_str()
 {
-    return "<?php exit;?>";
+    return "<?php exit; ?>";
 }
 
