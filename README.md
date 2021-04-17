@@ -30,13 +30,13 @@ chmod +x sign
 yum install wget
 ~~~
 #### 4.exec函数权限
-如果用到超级签名功能需要开启php的exec函数。需要前往php配置文件php.ini找到disable_functions，删掉exec，并且重启nginx(服务器)。
+如果用到超级签名功能需要开启php的exec函数。需要前往php配置文件php. ，删掉exec，并且重启nginx(服务器)。
 #### 5.zip功能权限
 如果用到超级签名功能需要检测服务器zip功能扩展是否安装。如果没有，执行以下命令安装：
 ~~~
 yum install zip
 ~~~
-#### 5.上传文件大小限制
+#### 6.上传文件大小限制
 如果上传文件过大并且使用本地服务器存储的话，请确认服务器配置项关于上传文件大小的限制：
 1. client_max_body_size 【 nginx.conf配置文件中，用于限制客户端请求报文大小】
 2. upload_max_filesize 【 php.ini配置文件中，用于限制用户上传单文件的大小】
