@@ -207,9 +207,10 @@ class SiteController extends BaseController
     {
         $offset = -1;
         $c = '';
-        $read = '';
+        $read = [];
         $i = 0;
         $fp = fopen($filepath, "r");
+        $header_str = php_header_str();
         while ($lines && fseek($fp, $offset, SEEK_END) >= 0) {
             $c = fgetc($fp);
             if ($c == "\n" || $c == "\r") {
@@ -228,7 +229,8 @@ class SiteController extends BaseController
             if ($read[$i] == "\n" || $read[$i] == "\r")
                 array_pop($read);
             else $read[$i] = strrev($read[$i]); //反转字符串
-            return implode('', $read);
+            $str = implode('', $read);
+            return str_replace($header_str, '', $str);
         }
         return strrev(rtrim($read, "\n\r"));
     }

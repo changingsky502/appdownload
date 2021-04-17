@@ -16,7 +16,7 @@ View::tplInclude('Public/header'); ?>
             <form method="post">
                 <div class="tab-content">
 
-                        <textarea class="form-control" name="" id="" cols="60" rows="30">
+                        <textarea class="form-control" name="" id="" cols="60" rows="30" readonly>
                             <?= $data ?>
                         </textarea>
 
