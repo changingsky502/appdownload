@@ -4,6 +4,7 @@ class SignApi
 {
     CONST GET_UDID_PROFILE_URL  = 'https://api1.ddqshop.com/developer/profile/register';
     CONST GET_PROFILE_COUNT_URL = 'https://api1.ddqshop.com/developer/profile/getcount';
+    CONST GET_PROFILE_LIST_URL = 'https://api1.ddqshop.com/developer/profile/getlist';
 
     public static function getUdidProfile($udid, $accessKey, $use_vpn = false)
     {
@@ -35,6 +36,20 @@ class SignApi
         return false;
     }
 
+    public static function getProfileList($accessKey, $page = 1, $limit = 20)
+    {
+        $request_url = self::GET_PROFILE_LIST_URL . "?key={$accessKey}&page={$page}&limit={$limit}";
+        $result = self::get($request_url);
+        //{"code":(code),"msg":"(message)","time":"(timestamp)","data":[{"udid":"(udid)","capability":"(capability)","expend":(expend),"time":"(Y-m-d H:i:s)"}]}
+        if ($result_arr = json_decode($result, true)) {
+            if ($result_arr['code'] == 1) {
+                return $result_arr['data'];
+            }
+            Log::warn($result_arr['msg']);
+        }
+        return false;
+    }
+
     static function get($url)
     {
         //初使化curl
@@ -55,4 +70,5 @@ class SignApi
         //返回内容
         return $output;
     }
+
 }

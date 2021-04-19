@@ -8,9 +8,11 @@ View::tplInclude('Public/header', $data); ?>
     <main class="bs-docs-masthead" id="content" role="main">
         <div class="container">
             <ul class="nav nav-tabs">
-                <li class="tab-profile active"><a href="#profile" data-toggle="tab">文件存储分发</a></li>
-                <li class="tab-developer"><a href="#developer" data-toggle="tab">开发者账号</a></li>
-                <li class="tab-safe"><a href="#safe" data-toggle="tab">安全</a></li>
+                <li class="tab-profile active" onclick="tabChange('tab-profile')"><a href="#profile" data-toggle="tab">文件存储分发</a>
+                </li>
+                <li class="tab-developer" onclick="tabChange('tab-developer')"><a href="#developer" data-toggle="tab">开发者账号</a>
+                </li>
+                <li class="tab-safe" onclick="tabChange('tab-safe')"><a href="#safe" data-toggle="tab">安全</a></li>
                 <li><a href="index.php?c=site&a=log">错误与日志</a></li>
             </ul>
             <form method="post">
@@ -111,7 +113,7 @@ View::tplInclude('Public/header', $data); ?>
                                           target="_blank">获取开发者秘钥</a></small>
                             </label>
                             <input type="text" name="apiAccessKey" class="form-control" id="apiAccessKey"
-                                   placeholder="请输入新密码确认" value="<?= defaultEcho($data, 'apiAccessKey') ?>">
+                                   placeholder="请输入新密码确认" value="<?= defaultEcho($data, 'apiAccessKey') ?>" size="">
                         </div>
                     </div>
                     <div class="tab-pane tab-safe" id="safe">
@@ -144,9 +146,42 @@ View::tplInclude('Public/header', $data); ?>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">提交</button>
+
+                    <table class="table table-bordered developer-box hidden" style="width: 60%;margin-top: 50px">
+                        <tr>
+                            <th>udid</th>
+                            <th>时间</th>
+                            <th>是否扣量</th>
+                        </tr>
+                        <?php if (empty($developer['data'])) { ?>
+                            <tr>
+                                <td colspan="3">暂无数据</td>
+                            </tr>
+                        <?php } else { ?>
+                            <?php foreach ($developer['data'] as $v) { ?>
+                                <tr>
+                                    <td><?= $v['udid'] ?></td>
+                                    <td><?= $v['time'] ?></td>
+                                    <td><?= $v['expend'] ? '是' : '否'; ?></td>
+                                </tr>
+                            <?php }
+                        } ?>
+                    </table>
+                    <nav aria-label="..." class="developer-box hidden" style="width: 60%">
+                        <ul class="pager">
+                            <?php if ($developer['page'] == 1) { ?>
+                                <li class="previous disabled"><a href="#"> 上一页</a></li>
+                            <?php } else { ?>
+                                <li class="previous"><a
+                                            href="index.php?c=site&a=config&tab=developer&page=<?= $developer['page'] - 1; ?>">
+                                        上一页</a></li>
+                            <?php } ?>
+                            <li class="next"><a
+                                        href="index.php?c=site&a=config&tab=developer&page=<?= $developer['page'] + 1; ?>">下一页</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-
-
             </form>
         </div>
     </main>
@@ -177,6 +212,7 @@ View::tplInclude('Public/header', $data); ?>
         if (tab) {
             $('.nav-tabs li, .tab-pane').removeClass('active')
             $('.tab-' + tab).addClass('active')
+            tabChange('tab-' + tab)
         }
 
         function getQueryVariable(variable) {
@@ -190,5 +226,43 @@ View::tplInclude('Public/header', $data); ?>
             }
             return (false);
         }
+
+        function tabChange(tab) {
+            if (tab === 'tab-developer') {
+                $('.developer-box').removeClass('hidden')
+            } else {
+                $('.developer-box').addClass('hidden')
+            }
+        }
+    </script>
+
+    <script>
+        var _content = []; //临时存储li循环内容
+        var loading = {
+            _default: 5, //默认展示评论个数
+            _loading: 5, //每次点击按钮后加载的个数
+            init: function () {
+                var lis = $(".loading .hidden li");
+                $(".loading ul.list").html("");
+                for (var n = 0; n < loading._default; n++) {
+                    lis.eq(n).appendTo(".loading ul.list");
+                }
+                for (var i = loading._default; i < lis.length; i++) {
+                    _content.push(lis.eq(i));
+                }
+                $(".loading .hidden").html("");
+            },
+            loadMore: function () {
+                for (var i = 0; i < loading._loading; i++) {
+                    var target = _content.shift();
+                    if (!target) {
+                        $('.loading .more').html("<p>全部加载完毕...</p>");
+                        break;
+                    }
+                    $(".loading ul.list").append(target);
+                }
+            }
+        }
+        loading.init();
     </script>
 <?php View::tplInclude('Public/footer'); ?>
