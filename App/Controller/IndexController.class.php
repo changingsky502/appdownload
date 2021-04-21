@@ -115,7 +115,7 @@ class IndexController extends BaseController
         $_SESSION['username'] = $username;
         $_SESSION['login_time'] = time();
         $_SESSION['login_ip'] = $_SERVER['REMOTE_ADDR'];
-        $this->redirect('index.php?c=app&a=index');
+        $this->redirect('index.php?c=site&a=index');
     }
 
     public function logOutAction()

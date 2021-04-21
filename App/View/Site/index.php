@@ -19,7 +19,14 @@ View::tplInclude('Public/header'); ?>
                                 } else {
                                     echo 'color-green';
                                 } ?>"><?= $apiData['surplus'] ?></span>, 总计：<?= $apiData['total'] ?></td>
-                            <td>PHP版本号：<?= PHP_VERSION ?>, 服务器：<?= check_system_type() ?></td>
+                            <td>PHP版本号：<?= PHP_VERSION ?></td>
+                            <td>服务器：<?= check_system_type() ?></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                PHP处理上传文件的最大值： <?= ini_get('upload_max_filesize') ?>【upload_max_filesize】
+                            </td>
+                            <td>POST方法最大量： <?= ini_get('post_max_size') ?>【post_max_size】</td>
                             <td>磁盘总容量：<?= get_disk_total(disk_total_space('.')) ?>
                                 ，剩余空间：<?= get_disk_total(disk_free_space('.')) ?></td>
                         </tr>
