@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>XSIGN</title>
+    <title>geekApp</title>
     <link href="public/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/static/css/toastr.min.css" rel="stylesheet">
     <link href="public/static/css/common.css" rel="stylesheet">
@@ -25,7 +25,7 @@ $action = !empty($_GET['a']) ? $_GET['a'] : 'Download';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">XSIGN</a>
+            <a class="navbar-brand" href="#">geekApp</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

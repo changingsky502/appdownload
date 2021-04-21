@@ -1,8 +1,7 @@
 <?php
-ini_set("display_errors", "On");
-error_reporting(E_ALL);
-//ini_set('open_basedir', __DIR__."../");
-define('APP_KEY', 'xsign');
+//ini_set("display_errors", "On");
+//error_reporting(E_ALL);
+define('APP_KEY', 'geekApp');
 include './App/SinglePHP.class.php';
 $config = array(
     'ROOT_PATH' => __DIR__."/",
