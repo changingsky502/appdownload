@@ -13,7 +13,7 @@ class SignApi
         $result  = self::get($request_url);
         //{"code":1,"msg":"success","time":"timestamp","data":{"key":"(key)","profile":"(profile)","expend":(expend)}}
         if($result_arr = json_decode($result, true)){
-            if($result_arr['code'] == 1){
+            if ($result_arr['code'] == 200) {
                 return $result_arr['data'];
             }
             Log::warn($result_arr['msg']);
@@ -27,8 +27,9 @@ class SignApi
         $request_url = self::GET_PROFILE_COUNT_URL."?key={$accessKey}";
         $result  = self::get($request_url);
         //{"code":1,"msg":"success","time":"timestamp","data":{"total":"(total)","surplus":"(surplus)"}}
+
         if($result_arr = json_decode($result, true)){
-            if($result_arr['code'] == 1){
+            if ($result_arr['code'] == 200) {
                 return $result_arr['data'];
             }
             Log::warn($result_arr['msg']);
@@ -42,7 +43,7 @@ class SignApi
         $result = self::get($request_url);
         //{"code":(code),"msg":"(message)","time":"(timestamp)","data":[{"udid":"(udid)","capability":"(capability)","expend":(expend),"time":"(Y-m-d H:i:s)"}]}
         if ($result_arr = json_decode($result, true)) {
-            if ($result_arr['code'] == 1) {
+            if ($result_arr['code'] == 200) {
                 return $result_arr['data'];
             }
             Log::warn($result_arr['msg']);
