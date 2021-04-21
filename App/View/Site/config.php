@@ -149,6 +149,9 @@ View::tplInclude('Public/header', $data); ?>
 
                     <table class="table table-bordered developer-box hidden" style="width: 60%;margin-top: 50px">
                         <tr>
+                            <th colspan="3">开发者证书信息剩余：<?= $developer['surplus'] ?>，证书总计：<?= $developer['total'] ?></th>
+                        </tr>
+                        <tr>
                             <th>udid</th>
                             <th>时间</th>
                             <th>是否扣量</th>

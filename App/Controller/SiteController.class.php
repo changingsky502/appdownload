@@ -108,12 +108,18 @@ class SiteController extends BaseController
                 $tips['success'][] = '操作成功！';
         }
         $data = Basic::getSiteCache();
-        $developer = ['page' => 1, 'data' => ''];
+        $developer = ['page' => 1, 'data' => '', 'total' => 0, 'surplus' => 0];
         if (!empty($data['apiAccessKey'])) {
             $page = !empty($_GET['page']) ? $_GET['page'] : 1;
             $developer['data'] = SignApi::getProfileList($data['apiAccessKey'], $page);
             $developer['page'] = $page;
+            $result = SignApi::getProfileCount($data['apiAccessKey']);
+            if (isset($result['total'])) {
+                $developer['total'] = $result['total'];
+                $developer['surplus'] = $result['surplus'];
+            }
         }
+
         $this->assign('data', $data);
         $this->assign('tips', $tips);
         $this->assign('developer', $developer);
