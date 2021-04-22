@@ -85,13 +85,13 @@
             <label class="col-sm-2 control-label">安装模式 <span class="color-red">*</span></label>
             <div class="col-sm-10">
                 <select name="install_type" class="form-control" id="">
-                    <option value="1" <?php if (empty($data['app']) || $data['app']['install_type'] == 1) {
-                        echo 'selected';
-                    } ?> >企业签名
-                    </option>
-                    <option value="2" <?php if (!empty($data['app']) && $data['app']['install_type'] == 2) {
+                    <option value="2" <?php if (empty($data['app']) || $data['app']['install_type'] == 2) {
                         echo 'selected';
                     } ?>>超级签名【需要系统配置开发者秘钥】
+                    </option>
+                    <option value="1" <?php if (!empty($data['app']) && $data['app']['install_type'] == 1) {
+                        echo 'selected';
+                    } ?> >企业签名【ipa包必须是企业签名包】
                     </option>
                 </select>
             </div>
