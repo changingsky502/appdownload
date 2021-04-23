@@ -655,7 +655,7 @@ class Log{
             $msg = date('[ Y-m-d H:i:s ]')."[{$level}]".$msg."\r\n";
             $logPath = C('APP_FULL_PATH') . '/Log/' . date('Ymd') . '.php';
             if (!file_exists($logPath)) {
-                file_put_contents($logPath, "<?php exit;?>");
+                file_put_contents($logPath, php_header_str());
             }
 //            if($wf){
 //                $logPath .= '.wf';
