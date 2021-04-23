@@ -79,6 +79,7 @@
                         <?php }
                     } ?>
                 </select>
+                <p class="help-block"><span class="small">安卓苹果应用相互关联</span></p>
             </div>
         </div>
         <div class="form-group ios-form hidden">

@@ -110,7 +110,10 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        下载链接：<a href="" class="download-link" target="_blank"></a>
+                        下载链接：<a href="" id="dLink" class="download-link" target="_blank"></a> <a href="javascript:;"
+                                                                                                 class="btn copyBtn btn-primary btn-xs"
+                                                                                                 data-clipboard-action="copy"
+                                                                                                 data-clipboard-target="#dLink">点击复制</a>
                     </div>
                     <div class="form-group ">
                         扫描二维码：<a href="javascript:;" class="download-qrcode" target="_blank" onclick=" downloadClick()">下载</a>
@@ -123,6 +126,7 @@
     </div>
 </div>
 <script src="public/static/js/jquery.qrcode.min.js"></script>
+<script src="public/static/js/clipboard.min.js"></script>
 <script>
     <?php if(!empty($tips)){ ?>
     <?php if(!empty($tips['error'])){ ?>
@@ -160,6 +164,15 @@
             text: download_url //任意内容
         });
         $('.download-link').html(download_url).attr('href', download_url)
+        var clipboard = new ClipboardJS('.copyBtn');
+        clipboard.on('success', function (e) {
+            toastr.success("复制成功！");
+            clipboard.destroy();
+        });
+        clipboard.on('error', function (e) {
+            toastr.error("复制失败，请手动复制！");
+            clipboard.destroy();
+        });
     })
     function downloadClick() {
         var data = $("canvas")[0].toDataURL().replace("image/png", "image/octet-stream;"); //获取二维码值，并修改响应头部。　　

@@ -26,7 +26,7 @@ View::tplInclude('Public/header'); ?>
                             <td>
                                 PHP处理上传文件的最大值： <?= ini_get('upload_max_filesize') ?>【upload_max_filesize】
                             </td>
-                            <td>POST方法最大量： <?= ini_get('post_max_size') ?>【post_max_size】</td>
+                            <td>POST方法传输最大限制： <?= ini_get('post_max_size') ?>【post_max_size】</td>
                             <td>磁盘总容量：<?= get_disk_total(disk_total_space('.')) ?>
                                 ，剩余空间：<?= get_disk_total(disk_free_space('.')) ?></td>
                         </tr>
