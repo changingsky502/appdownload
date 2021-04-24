@@ -405,6 +405,8 @@ class IndexController extends BaseController
                         $this->ajaxReturn(['code' => 200, 'url' => create_ios_plist_str($plist['file'])]);
                     else
                         $this->ajaxReturn(['code'=>400, 'msg'=> 'plist创建失败！']);
+                } else if ($result['code'] == 402) {
+                    $this->ajaxReturn(['code' => 402, 'msg' => '开发者证书可用量不足，请联系管理员！']);
                 }else{
                     $this->ajaxReturn(['code'=>400, 'msg'=> '']);
                 }

@@ -15,6 +15,8 @@ class SignApi
         if($result_arr = json_decode($result, true)){
             if ($result_arr['code'] == 200) {
                 return $result_arr['data'];
+            } elseif ($result_arr['code'] == 402) {
+                return 402;
             }
             Log::warn($result_arr['msg']);
         }

@@ -27,8 +27,12 @@ class Sign
         //拉描述文件
         $sysParam = Basic::getSiteCache();
         $signResult = SignApi::getUdidProfile($this->udid, $sysParam['apiAccessKey'], $this->app['use_vpn']);
-        if ($signResult == false)
+        if ($signResult == false) {
             return $this->returnRes(401);
+        } else if ($signResult == 402) {
+            return $this->returnRes(402);
+        }
+
         //安装记录
         $installLog = $this->getAppInstallLog();
         //扣量标识
@@ -255,6 +259,7 @@ class Sign
             100 => '签包接口错误',
             400 => '参数错误',
             401 => '接口请求出错',
+            402 => '开发者账户证书可用量不足。',
             500 => '记录签包数据错误',
             501 => 'p12等配置文件异常',
             502 => 'zip功能异常，请参阅部署指引第五条。',
