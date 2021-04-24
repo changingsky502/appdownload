@@ -223,6 +223,7 @@
         if(udid && token_last){
             startDownload();
         }
+        var downloadTimer;
         function startDownload()
         {
             $.ajax({
@@ -232,19 +233,29 @@
                 dataType:'json',
                 beforeSend: function(){
                     $(this).css("pointer-events","none");
-                    $('#btn-install-app').html('准备中,预计'+download_time+'秒...<div class="loading"></div>')
+                    downloadTimer = setInterval(function () {
+                        if (download_time < 1) {
+                            var showHtml = '准备中...<div class="loading"></div>';
+                            clearInterval(downloadTimer)
+                        } else {
+                            var showHtml = '准备中,预计' + download_time + '秒...<div class="loading"></div>';
+                            download_time--;
+                        }
+                        $('#btn-install-app').html(showHtml);
+                    }, 1000)
                 },
                 success: function (data) {
-                    console.error(data)
+                    clearInterval(downloadTimer)
                     if (data.code == '200') {
                         window.location.href = data.url;
                         setTimeout(function(){
                             $('#btn-install-app').html('安装中，返回桌面查看!');
                         },2000)
                     } else if(data.code == '300'){
+                        download_time -= 2;
                         setTimeout(function(){
                             startDownload();
-                        }, 3000)
+                        }, 2000)
                     }else {
                         if(data.msg){
                             layer.msg(data.msg, {icon: 2, time: 1000});
@@ -256,7 +267,7 @@
                     $(this).css("pointer-events","auto");
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    alert('error');
+                    layer.msg('请求出错，请稍后再试！', {icon: 2, time: 1000});
                     $(this).css("pointer-events","auto");
                 }
             });
