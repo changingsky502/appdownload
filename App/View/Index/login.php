@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>geekApp</title>
+    <title>appDownload</title>
     <link href="public/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/static/css/toastr.min.css" rel="stylesheet">
     <link href="public/static/css/common.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-lg-6">
             <form method="post">
-                <h3 class="">geekApp管理系统</h3>
+                <h3 class="">appDownload管理系统</h3>
                 <div class="form-group">
                     <label for="exampleInputEmail1">账号</label>
                     <input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="请输入账号">

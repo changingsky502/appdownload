@@ -1,4 +1,11 @@
 <?php View::tplInclude('Public/header'); ?>
+<link href="public/static/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet" type="text/css">
+<style>
+    .fa {
+        font-size: 20px;
+    }
+</style>
 <div class="container" role="main">
     <ol class="breadcrumb">
         <li><a href="?c=app&a=index">应用管理</a></li>
@@ -15,6 +22,16 @@
                 <label class="radio-inline">
                     <input type="radio" name="status" value="0" <?php if ($data['app']['status']==0) echo 'checked'; ?>> 暂停安装
                 </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">类型</label>
+            <div class="col-sm-10" style="padding-top: 6px">
+                <?php if ($data['app']['platform'] == 'iOS') { ?>
+                    <i class="fa fa-apple"></i>
+                <?php } else { ?>
+                    <i class="fa fa-android"></i>
+                <?php } ?>
             </div>
         </div>
         <div class="form-group">

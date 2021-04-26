@@ -82,7 +82,7 @@ class IndexController extends BaseController
 
     public function IndexAction()
     {
-        $this->assign('title', 'geekApp');
+        $this->assign('title', 'appDownload');
         $this->display();
     }
 

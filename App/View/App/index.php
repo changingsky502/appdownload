@@ -1,4 +1,11 @@
 <?php View::tplInclude('Public/header'); ?>
+<link href="public/static/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet" type="text/css">
+<style>
+    .fa {
+        font-size: 20px;
+    }
+</style>
 <div class="container" role="main">
     <div class="row" style="margin-bottom: 30px;">
         <div class="col-lg-4">
@@ -20,8 +27,8 @@
             <tr>
                 <th>ID</th>
                 <th>状态</th>
-                <th>应用</th>
                 <th>类型</th>
+                <th>应用</th>
                 <th>图标</th>
                 <th>下载</th>
                 <th>版本</th>
@@ -32,20 +39,26 @@
             <tbody>
             <?php foreach ($data['app']['result'] as $app): ?>
                 <tr class="tr-app-<?php echo $app['id']; ?>">
-                <th scope="row"><?php echo $app['id']; ?></th>
+                    <td scope="row"><?php echo $app['id']; ?></td>
                     <td><?php echo $app['status'] ? '<span class="label label-success">正常</span>' : '<span class="label label-danger">暂停</span>'; ?></td>
-                <td><?php echo $app['name']; ?></td>
-                    <td><?php echo $app['platform']; ?></td>
+                    <td>
+                        <?php if ($app['platform'] == 'iOS') { ?>
+                            <i class="fa fa-apple"></i>
+                        <?php } else { ?>
+                            <i class="fa fa-android"></i>
+                        <?php } ?>
+                    </td>
+                    <td><?php echo $app['name']; ?></td>
                     <td><img src="<?= $app['icon'] ? $app['icon'] : "public/static/images/default-icon.png" ?>" alt=""
                              width="50px"></td>
                     <td>
                         <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
-                                data-target="#exampleModal" data-name="<?= $app['name'] ?>"
+                                data-target="#exampleModal" data-name="<?= $app['name'] . '-' . $app['version_name'] ?>"
                                 data-url="<?= Basic::getMyDomain() . '/?id=' . $app['id'] ?>">地址/二维码
                         </button>
                     </td>
                     <td><?php echo $app['size']; ?></td>
-                <td><?php echo SoloAppDataLog::getInstallNum($app['id']); ?></td>
+                    <td><?php echo SoloAppDataLog::getInstallNum($app['id']); ?></td>
                     <td>
                         <a href="?c=app&a=upload&id=<?php echo $app['id']; ?>">[更新]</a>
                         |
@@ -155,7 +168,7 @@
         var name = button.data('name')
         var download_url = button.data('url')
         var modal = $(this)
-        modal.find('.modal-title').text(name + '-下载信息')
+        modal.find('.modal-title').text(name)
         $("#qrcode").html('');
         $("#qrcode").qrcode({
             render: "canvas", //table方式
@@ -176,7 +189,7 @@
     })
     function downloadClick() {
         var data = $("canvas")[0].toDataURL().replace("image/png", "image/octet-stream;"); //获取二维码值，并修改响应头部。　　
-        var filename = "download.png"; //保存的图片名称和格式
+        var filename = $('#exampleModalLabel').html() + ".png"; //保存的图片名称和格式
         var saveLink= document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
         saveLink.href = data;
         saveLink.download = filename;

@@ -1,7 +1,7 @@
 <?php
 //ini_set("display_errors", "On");
 //error_reporting(E_ALL);
-define('APP_KEY', 'geekApp');
+define('APP_KEY', 'appDownload');
 include './App/SinglePHP.class.php';
 $config = array(
     'ROOT_PATH' => __DIR__."/",
