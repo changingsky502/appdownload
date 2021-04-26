@@ -92,8 +92,8 @@ class IndexController extends BaseController
         if ($_POST && $_POST['username'] && $_POST['password']) {
             $safeId = Basic::$safe_cache_id;
             $safeData = File::search('site', 'id', $safeId);
-            if (!empty($safeData) && !empty($safeData['loginPass'])) {
-                if (($_POST['username'] == $safeData['username']) && ($_POST['password'] == $safeData['password'])) {
+            if (!empty($safeData['result']) && !empty($safeData['result'][0]['loginPass'])) {
+                if (($_POST['username'] == $safeData['result'][0]['username']) && ($_POST['password'] == $safeData['result'][0]['loginPass'])) {
                     $this->__toLogin($_POST['username']);
                 } else {
                     $tips['error'][] = '账号或密码错误！';
