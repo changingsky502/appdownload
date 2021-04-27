@@ -247,4 +247,58 @@ class SiteController extends BaseController
         }
         return strrev(rtrim($read, "\n\r"));
     }
+
+    /**
+     * 数据备份
+     */
+    public function dataAction()
+    {
+        $tips = [];
+        if (!empty($_GET['op']) && $_GET['op'] == 'backup') {
+            $filename = C('UPLOAD_PATH') . date('YmdHi') . '_backup.zip';
+            $befile = './App/Data';
+            $shell = "zip -r $filename $befile";
+            $output = [];
+            $result = '';
+            exec($shell, $output, $result);
+            if ($result) {
+                Log::warn('数据备份失败，函数权限有误！');
+                $tips['error'][] = '数据备份失败，函数权限有误！';
+            } else {
+                $url = Basic::getMyDomain() . '/' . str_replace(C('ROOT_PATH'), '', $filename);
+                header("location:{$url}");
+            }
+        }
+        $this->assign('tips', $tips);
+        $this->display();
+    }
+
+    /**
+     * 数据恢复
+     */
+    public function recoverAction()
+    {
+        if ($_FILES) {
+            $up = new FileUpload();
+            //设置属性(上传的位置， 大小， 类型， 名是是否要随机生成)
+            $path = $this->__getDirByType('');
+            $up->set("path", $path);
+            $up->set("maxsize", 100 * 1024 * 1024);
+            $up->set("allowtype", array("zip"));
+            //使用对象中的upload方法， 就可以上传文件， 方法需要传一个上传表单的名子 pic, 如果成功返回true, 失败返回false
+            if ($up->upload("file")) {
+                $filename = $path . $up->getFileName();
+                $befile = C('ROOT_PATH');
+                $shell = "unzip -o $filename -d $befile";
+                $output = [];
+                $result = '';
+                exec($shell, $output, $result);
+                $this->ajaxReturn(['code' => 200]);
+            } else {
+                $this->ajaxReturn(['code' => 400, 'msg' => $up->getErrorMsg()]);
+            }
+        }
+
+    }
+
 }

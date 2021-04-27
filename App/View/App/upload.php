@@ -133,6 +133,7 @@
         </div>
     </form>
 </div>
+<script type="text/javascript" src="public/static/js/oss/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
 <?php if (!empty($params['fileDriver']) && $params['fileDriver'] == 'cos') { ?>
     <script src="public/static/js/cos/cos-js-sdk-v5.min.js"></script>
     <script>
@@ -142,10 +143,8 @@
     </script>
     <script type="text/javascript" src="public/static/js/cos/upload.js"></script>
 <?php } else if (!empty($params['fileDriver']) && $params['fileDriver'] == 'oss'){ ?>
-    <script type="text/javascript" src="public/static/js/oss/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
     <script type="text/javascript" src="public/static/js/oss/upload.js"></script>
 <?php }else{ ?>
-    <script type="text/javascript" src="public/static/js/oss/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
     <script type="text/javascript" src="public/static/js/local/upload.js"></script>
 <?php } ?>
 <script type="text/javascript" src="public/static/js/app-info-parser.js"></script>

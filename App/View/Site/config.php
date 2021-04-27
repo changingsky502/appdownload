@@ -13,13 +13,14 @@ View::tplInclude('Public/header', $data); ?>
                 <li class="tab-developer" onclick="tabChange('tab-developer')"><a href="#developer" data-toggle="tab">开发者账号</a>
                 </li>
                 <li class="tab-safe" onclick="tabChange('tab-safe')"><a href="#safe" data-toggle="tab">安全</a></li>
-                <li><a href="index.php?c=site&a=log">错误与日志</a></li>
+                <li><a href="index.php?c=site&a=data">数据备份</a></li>
+                <li><a href="index.php?c=site&a=log">错误日志</a></li>
             </ul>
             <form method="post">
                 <div class="tab-content">
 
                     <div class="tab-pane active tab-profile" id="profile">
-                        <div class="form-group">
+                        <div class="" style="margin-bottom: 10px">
                             <label for="fileDriver">引擎<span class="color-red">*</span></label>
                             <br>
                             <input type="radio" name="fileDriver"
@@ -201,13 +202,16 @@ View::tplInclude('Public/header', $data); ?>
     <script>
         function showDriverFormData(driver) {
             if (driver == 'oss') {
+                $('.tab-profile .form-group').hide();
                 $('.oss-data').show();
-                $('.cos-data').hide();
             } else if (driver == 'cos') {
+                $('.tab-profile .form-group').hide();
                 $('.cos-data').show();
-                $('.oss-data').hide();
+            } else if (driver == 'qiniu') {
+                $('.tab-profile .form-group').hide();
+                $('.qiniu-data').show();
             } else if (!driver || driver == 'local') {
-                $('.oss-data, .cos-data').hide();
+                $('.tab-profile .form-group').hide();
             }
         }
         showDriverFormData('<?= defaultEcho($data, 'fileDriver') ?>');

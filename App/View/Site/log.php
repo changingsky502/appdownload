@@ -11,7 +11,8 @@ View::tplInclude('Public/header'); ?>
                 <li><a href="index.php?c=site&a=config&tab=profile">文件存储分发</a></li>
                 <li><a href="index.php?c=site&a=config&tab=developer">开发者账号</a></li>
                 <li><a href="index.php?c=site&a=config&tab=safe">安全</a></li>
-                <li class="active"><a href="index.php?c=site&a=log" data-toggle="tab">错误与日志</a></li>
+                <li><a href="index.php?c=site&a=data">数据备份</a></li>
+                <li class="active"><a href="index.php?c=site&a=log" data-toggle="tab">错误日志</a></li>
             </ul>
             <form method="post">
                 <div class="tab-content">
