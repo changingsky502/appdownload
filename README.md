@@ -14,6 +14,10 @@ appDownload
     + 用户名：admin2020 
     + 密码：pass2020
  > 提醒：在正式使用之前，注意修改用户名和密码。
+ ## 演示地址
+ 
++ https://demo.appdownload.me/index.php?c=index&a=login
+ > 提醒：演示版本，部分功能已禁用。
 ## 部署指引
 #### 1.项目文件权限
 项目下载下来后，部署到服务器，需要赋予项目权限，归属到www用户组即可。【linux 常用命令 chown -R www:www appdownload】
