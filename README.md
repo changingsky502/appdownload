@@ -7,6 +7,12 @@ appDownload
 ## 运行环境
 + Nginx
 + PHP 5.6+
+## 安装
+ * 直接下载zip文件
+ * Composer安装
+```
+composer create-project changingsky/appdownload
+```
 ## 初次登录
 + 登录地址
     + https://您的域名/index.php?c=index&a=login
