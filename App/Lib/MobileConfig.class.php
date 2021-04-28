@@ -19,7 +19,7 @@ class MobileConfig
 
     public function run($app,$salt)
     {
-        include C('APP_PATH').'Vendor/autoload.php';
+        include C('ROOT_PATH') . 'Vendor/autoload.php';
         if(!is_dir($this->save_path))
             mkdir($this->save_path, 0755, true);
         //拼接签名字串

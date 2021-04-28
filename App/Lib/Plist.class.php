@@ -17,7 +17,7 @@ class Plist
 
     public function run($param)
     {
-        include C('APP_PATH').'Vendor/autoload.php';
+        include C('ROOT_PATH') . 'Vendor/autoload.php';
         $plist = new CFPropertyList( $this->demo_file );
         foreach( $plist->getValue(true) as $key => $value )
         {

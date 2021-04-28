@@ -9,5 +9,8 @@
             "email": "changingsky@yandex.com"
         }
     ],
-    "require": {}
+    "require": {
+        "rodneyrehm/plist": "2.0.1",
+        "qiniu/php-sdk": "^7.3"
+    }
 }
