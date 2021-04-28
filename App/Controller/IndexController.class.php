@@ -16,7 +16,7 @@ class IndexController extends BaseController
             $result['safari'] = 2;
         }
         $system_param = Basic::getSiteCache();
-        if (empty($id) && empty($system_param)) {
+        if (empty($id) && !file_exists(C('APP_PATH') . 'Data/app.php')) {
             header("location:index.php?c=index&a=login");
             exit;
         }
