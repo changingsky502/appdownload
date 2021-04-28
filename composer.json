@@ -1,0 +1,13 @@
+{
+    "name": "changingsky/appdownload",
+    "description": "An autonomous application distribution platform",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "changingsky",
+            "email": "changingsky@yandex.com"
+        }
+    ],
+    "require": {}
+}
