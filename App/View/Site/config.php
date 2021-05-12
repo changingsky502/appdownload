@@ -114,7 +114,7 @@ View::tplInclude('Public/header', $data); ?>
                                           target="_blank">获取开发者秘钥</a></small>
                             </label>
                             <input type="text" name="apiAccessKey" class="form-control" id="apiAccessKey"
-                                   placeholder="请输入新密码确认" value="<?= defaultEcho($data, 'apiAccessKey') ?>" size="">
+                                   placeholder="请输入开发者秘钥" value="<?= defaultEcho($data, 'apiAccessKey') ?>" size="">
                         </div>
                     </div>
                     <div class="tab-pane tab-safe" id="safe">
